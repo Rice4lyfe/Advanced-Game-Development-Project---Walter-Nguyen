@@ -1037,7 +1037,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "This is a time based game based on how many inputs you can get correct.
     \nYou will be given a tool of choice to cook with. There are 5 days to cook.\nEach
-    day lasts a minute. Hit as you can correctly! \nToo many(10) mistakes results
+    day lasts a minute. Hit as you can correctly! \nToo many(3) mistakes results
     in a failure. \n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d1740a12c138b1429fabf3cfca843dc, type: 2}

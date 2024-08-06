@@ -63,6 +63,7 @@ public class playerstuff : MonoBehaviour
         tool_level = 1;
         day_level = 1;
         food_level = 1;
+        timer.remainingTime = 60;
         SetUpgradeDisplay();
     }
 

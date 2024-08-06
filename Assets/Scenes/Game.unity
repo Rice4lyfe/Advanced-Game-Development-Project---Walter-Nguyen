@@ -5792,9 +5792,15 @@ MonoBehaviour:
   playerstuff: {fileID: 130776024}
   cameraTest: {fileID: 593836264}
   gameActive: 0
+  objExists: 0
   timer: {fileID: 130776023}
-  prefab: {fileID: 6708472874938056564, guid: e5900facb4df7bb48b3500ce0938b5ae, type: 3}
+  prefab:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentIndex: 0
   spawn: {fileID: 1418158505}
+  correctLetter: 0
 --- !u!1 &1431840070
 GameObject:
   m_ObjectHideFlags: 0
@@ -7271,9 +7277,16 @@ MonoBehaviour:
   playerstuff: {fileID: 130776024}
   cameraTest: {fileID: 593836264}
   gameActive: 0
+  objExists: 0
   timer: {fileID: 130776023}
-  prefab: {fileID: 6708472874938056564, guid: e5900facb4df7bb48b3500ce0938b5ae, type: 3}
+  prefab:
+  - {fileID: 6708472874938056564, guid: 0dfb04f2cce88574887492eadeff15d2, type: 3}
+  - {fileID: 6647329866557975766, guid: a8d91ddb4a33fcb47988bb709fcf3623, type: 3}
+  - {fileID: 6241310391829163594, guid: eb1080cec98c5fd40a075370a2104eb9, type: 3}
+  - {fileID: 485371783995366330, guid: a0c062ed1f6e8674cb901bbe901af4b5, type: 3}
+  currentIndex: 0
   spawn: {fileID: 1418158505}
+  correctLetter: 0
 --- !u!1 &1725393298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1804115603063742, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
