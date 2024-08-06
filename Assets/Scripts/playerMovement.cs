@@ -40,11 +40,11 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
  
         //check if the player is on the ground so he can jump
-        // if (Input.GetButtonDown("Jump") && isGrounded)
-        // {
-        //     //the equation for jumping
-        //     velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        // }
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            //the equation for jumping
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
         //Don't need this if we are not jumping
  
         velocity.y += gravity * Time.deltaTime;
