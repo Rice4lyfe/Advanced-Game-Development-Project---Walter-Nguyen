@@ -19,13 +19,13 @@ public class cameraTest : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            ShowGameCamera();
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            ShowHubCamera();
-        }
+        // if (Input.GetKeyDown(KeyCode.R))
+        // {
+        //     ShowGameCamera();
+        // }
+        // if (Input.GetKeyDown(KeyCode.F))
+        // {
+        //     ShowHubCamera();
+        // }
     }
 }

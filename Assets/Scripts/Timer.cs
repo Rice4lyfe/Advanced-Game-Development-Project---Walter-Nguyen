@@ -37,8 +37,10 @@ public class Timer : MonoBehaviour
             player.GetComponent<PlayerMovement>().enabled = true;
             player.GetComponent<cameraTest>().ShowHubCamera();
             GUIManager.IncreaseDay();
+            GUIManager.ResetPenalty();
             remainingTime = (int)(playerstuff.day_level * 60);
             timerActive = false;
+
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);

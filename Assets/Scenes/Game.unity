@@ -548,6 +548,8 @@ MonoBehaviour:
   timer_txt: {fileID: 682590412}
   timerActive: 0
   player: {fileID: 593836259}
+  GUIManager: {fileID: 130776022}
+  playerstuff: {fileID: 130776024}
   remainingTime: 60
 --- !u!114 &130776024
 MonoBehaviour:
@@ -5741,6 +5743,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4992508771860762, guid: 4097a285d710b744b9ff6cb685207bae, type: 3}
   m_PrefabInstance: {fileID: 369876791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1418158504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418158505}
+  - component: {fileID: 1418158506}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1418158505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418158504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.932, y: 4.6, z: 2.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1418158506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418158504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7957c43f79c0dea469a9404e905718be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 593836259}
+  playerUI: {fileID: 130776017}
+  playerstuff: {fileID: 130776024}
+  cameraTest: {fileID: 593836264}
+  gameActive: 0
+  timer: {fileID: 130776023}
+  prefab: {fileID: 6708472874938056564, guid: e5900facb4df7bb48b3500ce0938b5ae, type: 3}
+  spawn: {fileID: 1418158505}
 --- !u!1 &1431840070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6813,7 +6867,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655174561}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7216,7 +7270,10 @@ MonoBehaviour:
   playerUI: {fileID: 130776017}
   playerstuff: {fileID: 130776024}
   cameraTest: {fileID: 593836264}
-  timer: {fileID: 0}
+  gameActive: 0
+  timer: {fileID: 130776023}
+  prefab: {fileID: 6708472874938056564, guid: e5900facb4df7bb48b3500ce0938b5ae, type: 3}
+  spawn: {fileID: 1418158505}
 --- !u!1 &1725393298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1804115603063742, guid: 2a79468e213672b4984d41d9f26ab16a, type: 3}
@@ -9485,3 +9542,4 @@ SceneRoots:
   - {fileID: 1941664505}
   - {fileID: 102941011}
   - {fileID: 1466608279}
+  - {fileID: 1418158505}

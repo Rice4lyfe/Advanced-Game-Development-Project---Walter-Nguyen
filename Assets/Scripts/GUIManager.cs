@@ -100,7 +100,7 @@ public class GUIManager : MonoBehaviour
         // {
         //     ChangePenalty(1);
         // }
-        if(penalty >= 10)
+        if(penalty >= 3)
         {
             Application.Quit();
             Debug.Log("Congrats! You died.");
